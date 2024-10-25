@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.top-container{
+    background-color: #036298;
+    color: white;
+    font-family: Lalezar;
+    font-size: 18px;
+    height: 40px;
+    padding-left: 10px;
+    padding-top: 5px;
+    cursor: pointer;
+
+}
+.top-container .row .text-center {
+    background-color: #036298;
+    color: white;
+    font-family: Lalezar;
+    font-size: 18px;
+    height: 40px;
+    padding-left: 10px;
+    padding-top: 5px;
+    cursor: pointer;
+
+
+}
+.phone-link, .whatsapp-link {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Keeps the text color the same as its surrounding */
+    display: block; /* Makes each link a block element for better spacing */
+    margin-bottom: 5px; /* Adds space between the links */
+}
+
+.email-link {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Keeps the text color the same as its surrounding */
+}
+
+@media (max-width: 576px) {
+    .top-container {
+       display: none; /* Center text on small screens */
+    }
+}
+
+
+/*Navbar menu css*/
+.navbar{
+    background-color: white;
+    height: 65px;
+    font-family: sans-serif;
+    font-size: large;
+    font-weight: bold;
+    box-shadow: 0px 0px 8px gray;
+
+
+}
+
+
+#heroCarousel{
+    /* border: 1px solid red; */
+     background-image: url('asset/images/2.png');
+     background-size: cover;
+
+}
+/* Hero Section */
+.hero {
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+     padding: 20px;
+    /*border:1px solid red; */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Footer styling */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.footer-text {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 0.9rem;
+    }
+}

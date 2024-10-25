@@ -6,7 +6,7 @@
 <div class="container-fluid top-container">
     <div class="row">
         <div class="col-12 col-md-4 text-center">
-            <span>hello</span>
+            <span>welcome to doha</span>
         </div>
         <div class="col-12 col-md-4 text-center">
             <a href="tel:+974300303215" class="phone-link"><span>+974-300303215</span></a>

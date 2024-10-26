@@ -60,14 +60,14 @@
 
 @section('section')
 <div class="container-fluid p-0">
-    <div class="container border border-danger py-5">
+    <div class="container border py-5">
         <div class="row border">
             <div class="col-12 text-left">
                 <h2>A Brief Story About The Company</h2>
             </div>
         </div>
         <div class="row mt-3">
-            <div class="col-12 text-center">
+            <div class="col-12 text-center " style="background-color: #036298; color:white; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; padding:5px">
                 <h3>Albest Pools Contracting and Services</h3>
             </div>
         </div>

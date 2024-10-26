@@ -28,7 +28,7 @@
         <div class="carousel-item active">
             <section class="hero d-flex align-items-center">
                 <div class="container text-center">
-                    <h1>Welcome To</h1>
+                    <h1>Welcome To Albest Pools Contracting & service</h1>
                     <p>Responsive, modern design using Bootstrap and custom CSS</p>
                     <a href="#" class="btn btn-primary">Learn More</a>
                 </div>

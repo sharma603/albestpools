@@ -17,17 +17,6 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('asset/css/home.css') }}">
-     
-    <!-- Custom JavaScript -->
-    <script src="{{ asset('asset/javascript/home.js') }}"></script>
-    <script src="{{ asset('asset/javascript/javascript.js') }}"></script>
-
-    <!-- jQuery -->
-    <!-- <script src="jquery-3.7.1.min.js"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-    <!-- Bootstrap JS (with Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -36,11 +25,11 @@
     </div>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="{{ asset('asset/company_logo/ablest_logo.png') }}" style="background-size: cover; height:50px;" alt="Albest Logo">
-                <img src="{{ asset('asset/company_logo/albest_name.png') }}" style="background-size: cover; height:40px; margin-top:10px;" alt="Albest Name">
+                <img src="{{ asset('asset/company_logo/ablest_logo.png') }}" style="height:50px;" alt="Albest Logo">
+                <img src="{{ asset('asset/company_logo/albest_name.png') }}" style="height:40px; margin-top:10px;" alt="Albest Name">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -51,7 +40,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="service">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Blogs</a>
@@ -75,8 +64,8 @@
     <!-- End Slider Box -->
 
     <!-- Start Model Box -->
-    <div class="model-box">
-        @yield('model-box')
+    <div class="section">
+        @yield('section')
     </div>
     <!-- End Model Box -->
 
@@ -84,6 +73,15 @@
         <!-- Optional footer content can go here -->
     </footer>
 
+    <!-- jQuery (Optional, only if you need it) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JS (Bootstrap 5 version) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="{{ asset('asset/javascript/home.js') }}"></script>
+    <script src="{{ asset('asset/javascript/javascript.js') }}"></script>
 </body>
 
 </html>

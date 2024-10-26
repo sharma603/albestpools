@@ -20,8 +20,10 @@
      
     <!-- Custom JavaScript -->
     <script src="{{ asset('asset/javascript/home.js') }}"></script>
+    <script src="{{ asset('asset/javascript/javascript.js') }}"></script>
 
     <!-- jQuery -->
+    <!-- <script src="jquery-3.7.1.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <!-- Bootstrap JS (with Popper) -->

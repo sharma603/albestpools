@@ -59,8 +59,9 @@ body {
 
 #heroCarousel{
     /* border: 1px solid red; */
-     background-image: url('asset/images/2.png');
+    /* background-color: gray; */
      background-size: cover;
+     background-image: url('/asset/images/1.png');
 
 }
 /* Hero Section */

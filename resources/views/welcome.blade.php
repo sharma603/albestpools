@@ -89,6 +89,49 @@
 
     <footer>
         <!-- Optional footer content can go here -->
+        <footer class="bg-dark text-white pt-4 pb-3 mt-5">
+    <div class="container">
+        <div class="row">
+            <!-- Company Information -->
+            <div class="col-md-4 text-center text-md-start mb-3">
+                <h5>Albest Pools Contracting and Services</h5>
+                <p>We specialize in high-quality pool installation and maintenance, providing innovative solutions with a commitment to customer satisfaction.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-4 text-center mb-3">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                    <li><a href="service" class="text-white text-decoration-none">Services</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="col-md-4 text-center text-md-end mb-3">
+                <h5>Contact Us</h5>
+                <p><a href="mailto:albestpools55@gmail.com" class="text-white text-decoration-none">albestpools55@gmail.com</a></p>
+                <p><a href="tel:+974300303215" class="text-white text-decoration-none">+974-300303215</a></p>
+
+                <!-- Social Media Links -->
+                <div class="d-flex justify-content-center justify-content-md-end">
+                    <a href="https://facebook.com" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com" class="text-white"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Copyright Row -->
+        <div class="row mt-3">
+            <div class="col text-center">
+                <p class="mb-0">&copy; 2024 Albest Pools Contracting and Services. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
     </footer>
 
     <!-- jQuery (Optional, only if you need it) -->

@@ -71,8 +71,8 @@
                 <h3>Albest Pools Contracting and Services</h3>
             </div>
         </div>
-        <div class="row mt-4">
-            <div class="col-lg-6 col-md-12 mb-4 border">
+        <div class="row mt-4 border">
+            <div class="col-lg-6 col-md-12 mb-4  p-3">
                 <p>
                     At Albest Pools Contracting and Services, we specialize in crafting stunning pools and tranquil water features that transform outdoor spaces into serene retreats. Based in Doha, our journey began with a commitment to excellence in private pool installation and maintenance, quickly evolving to serve the diverse needs of real estate and resort developments.
                 </p>
@@ -82,8 +82,9 @@
                 <p>
                     Choose Albest Pools for your next project to experience a blend of luxury, functionality, and enduring beauty in your outdoor oasis.
                 </p>
+                <button class="btn" style="margin-left: 100px; margin-top:20px;margin-bottom:5px; background-color:#036298; padding:7px; color:white; font-family:'Sansita One', sans-serif; font-size:22px;">More About</button>
             </div>
-            <div class="col-lg-6 col-md-12 d-none d-lg-block">
+            <div class="col-lg-6 col-md-12 ">
                 <img src="{{ asset('asset/images/worked_pic.png') }}" alt="worked_pic">
 
             </div>

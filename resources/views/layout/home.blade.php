@@ -90,5 +90,41 @@
             </div>
         </div>
     </div>
+    <!-- this is for image shows -->
+     <div></div>
+     <!-- this is inquery form -->
+ 
+ <div class="container mt-5">
+    <h2>Inquiry Form</h2>
+
+    <!-- Success message -->
+    <div id="success-message" class="alert alert-success d-none"></div>
+
+    <form id="inquiry-form">
+        <div class="mb-3">
+            <label for="full_name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="full_name" name="full_name" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="contact_number" class="form-label">Contact Number</label>
+            <input type="text" class="form-control" id="contact_number" name="contact_number">
+        </div>
+        <div class="mb-3">
+            <label for="service_type" class="form-label">Service Type</label>
+            <input type="text" class="form-control" id="service_type" name="service_type">
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+
 </div>
 @endsection

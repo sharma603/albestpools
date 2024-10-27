@@ -137,3 +137,20 @@ footer {
         font-size: 0.9rem;
     }
 }
+
+
+/* this for contacts page css coding */
+.contact-info {
+    font-size: 18px;
+}
+.btn-custom {
+    background-color: #036298;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+.social-icons a {
+    color: #036298;
+    font-size: 24px;
+    margin: 0 10px;
+}

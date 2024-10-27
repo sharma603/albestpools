@@ -22,24 +22,10 @@
 </head>
 
 <body>
-    <div class="top-container">
-        @section('Tophead')
-        <div class="container-fluid top-container">
-            <div class="row">
-                <div class="col-12 col-md-4 text-center">
-                    <span>Welcome to Albest Pools Contracting and Services</span>
-                </div>
-                <div class="col-12 col-md-4 text-center">
-                    <a href="tel:+974300303215" class="phone-link"><span>+974-300303215</span></a>
-                    <a href="https://wa.me/974300303215" class="whatsapp-link"><span>WhatsApp</span></a>
-                </div>
-                <div class="col-12 col-md-4 text-center">
-                    <a href="mailto:albestpools55@gmail.com" class="email-link"><span>albestpools55@gmail.com</span></a>
-                </div>
-            </div>
-        </div>
-        @show
-    </div>
+    <!-- Top view company information here -->
+@section('Tophead')
+   
+    @show
 
    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="z-index: 1000;;">
@@ -55,19 +41,19 @@
             <div class="collapse navbar-collapse bg-light" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item ">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="service">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blogs</a>
+                        <a class="nav-link" href="blogs">Blogs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="abouts">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="contacts">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -83,7 +69,7 @@
     </div>
     <!-- End Slider Box -->
 
-    <!-- Start Model Box -->
+    <!-- Start a body section -->
     <div class="section">
         @yield('section')
     </div>

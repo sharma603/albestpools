@@ -1,86 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Albest Pools - Our Services</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        body {
-            height: 200vh; /* To create scrolling space */
-            background-color: #f8f9fa;
-        }
+@extends('welcome')
+@section('title', 'Service')
+<!-- Top Company Welcome -->
+@section('section')
+<div class="container">
+        <header class="text-center my-5">
+            <h1>Our Services</h1>
+            <p>At Albest Pools Contracting and Services, we offer a variety of services to meet your pool and outdoor needs.</p>
+        </header>
 
-        .service-section {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 50px;
-            opacity: 0;
-            transform: translateX(-100px);
-            transition: all 0.5s ease-in-out;
-        }
-
-        .service-section.visible {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        .service-item {
-            background: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            width: 30%; /* Adjust width as needed */
-        }
-    </style>
-</head>
-<body>
-
-<div class="container mt-5">
-    <h1 class="text-center">Welcome to Albest Pools</h1>
-    <h2 class="text-center">Our Services</h2>
-
-    <div class="row service-section" id="serviceSection">
-        <div class="col-md-4 service-item">
-            <h3>Pool Installation</h3>
-            <p>High-quality pool installation services tailored to your needs.</p>
+        <div class="row">
+            <!-- Service 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="{{ asset('asset/images/service1.jpg') }}" class="card-img-top" alt="Custom Pool Design">
+                    <div class="card-body">
+                        <h5 class="card-title">Custom Pool Design</h5>
+                        <p class="card-text">We create stunning custom pool designs tailored to your preferences and the landscape of your outdoor space.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="{{ asset('asset/images/service2.jpg') }}" class="card-img-top" alt="Pool Installation">
+                    <div class="card-body">
+                        <h5 class="card-title">Pool Installation</h5>
+                        <p class="card-text">Our team specializes in professional pool installation, ensuring quality workmanship and timely project completion.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="{{ asset('asset/images/service3.jpg') }}" class="card-img-top" alt="Maintenance Services">
+                    <div class="card-body">
+                        <h5 class="card-title">Maintenance Services</h5>
+                        <p class="card-text">We offer comprehensive maintenance services to keep your pool in pristine condition all year round.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4 service-item">
-            <h3>Pool Maintenance</h3>
-            <p>Comprehensive maintenance plans to keep your pool in perfect condition.</p>
-        </div>
-        <div class="col-md-4 service-item">
-            <h3>Renovation Services</h3>
-            <p>Transform your old pool with our expert renovation services.</p>
-        </div>
-    </div>
-</div>
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script>
-    // Function to check if element is in view
-    function isElementInViewport(el) {
-        const rect = el.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }
-
-    // Animation on scroll
-    function handleScroll() {
-        const serviceSection = document.getElementById('serviceSection');
-        if (isElementInViewport(serviceSection)) {
-            serviceSection.classList.add('visible');
-        }
-    }
-
-    window.addEventListener('scroll', handleScroll);
-</script>
-</body>
-</html>
+@endsection

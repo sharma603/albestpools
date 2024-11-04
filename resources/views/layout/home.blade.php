@@ -264,6 +264,8 @@
     </div>
 </div>
 
+
+@endsection
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
@@ -275,25 +277,22 @@ document.addEventListener("DOMContentLoaded", () => {
         const interval = setInterval(() => {
             current += increment;
             if (current >= end) {
-                element.textContent = end.toLocaleString(); // Format as a number
+                element.textContent = end;
                 clearInterval(interval);
             } else {
-                element.textContent = Math.floor(current).toLocaleString();
+                element.textContent = Math.floor(current);
             }
         }, 10);
     }
 
     function handleScroll() {
-        statItems.forEach((item) => {
+        statItems.forEach((item, index) => {
             const statNumber = item.querySelector(".stat-number");
-            const targetText = statNumber.textContent;
-            const targetNumber = parseInt(targetText.replace(/K|\+/g, "") + "000"); // Convert "K+" suffix to actual number
-
-            // Check if the stat item is in view and hasn't been counted yet
+            const targetNumber = parseInt(statNumber.textContent.replace(/K|\+/g, "") + "000"); // Handle "K+" suffix
             const rect = item.getBoundingClientRect();
             if (rect.top < window.innerHeight && !item.classList.contains("visible")) {
                 item.classList.add("visible");
-                animateCount(statNumber, 0, targetNumber, 2000); // 2000ms for animation duration
+                animateCount(statNumber, 0, targetNumber, 2000); // 2000ms duration for counting
             }
         });
     }
@@ -301,7 +300,6 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", handleScroll);
     handleScroll(); // Initial check in case elements are already in view
 });
-
 
 
 
@@ -314,4 +312,3 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 </script>
-@endsection

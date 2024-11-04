@@ -60,6 +60,7 @@
 
 @section('section')
 <div class="container-fluid p-0">
+
     <div class="container border py-5">
         <div class="row border">
             <div class="col-12 text-left">
@@ -91,40 +92,226 @@
         </div>
     </div>
     <!-- this is for image shows -->
-     <div></div>
-     <!-- this is inquery form -->
- 
- <div class="container mt-5">
-    <h2>Inquiry Form</h2>
+    <!-- counter section -->
+    <div>
+        <div class="container">
+            <div class="stats-container">
+                <!-- Stat Item 1 -->
+                <div class="stat-item">
+                    <div class="stat-number">14K+</div>
+                    <div class="stat-description">Happy Customers</div>
+                </div>
 
-    <!-- Success message -->
-    <div id="success-message" class="alert alert-success d-none"></div>
+                <div class="divider"></div>
 
-    <form id="inquiry-form">
-        <div class="mb-3">
-            <label for="full_name" class="form-label">Full Name</label>
-            <input type="text" class="form-control" id="full_name" name="full_name" required>
+                <!-- Stat Item 2 -->
+                <div class="stat-item">
+                    <div class="stat-number">27K+</div>
+                    <div class="stat-description">Product Sold</div>
+                </div>
+
+                <div class="divider"></div>
+
+                <!-- Stat Item 3 -->
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-description">Years Experience</div>
+                </div>
+            </div>
         </div>
-        <div class="mb-3">
-            <label for="email" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+    <!-- this is inquery form -->
+
+    <div class="container mt-5">
+        <h2>Inquiry Form</h2>
+
+        <!-- Success message -->
+        <div id="success-message" class="alert alert-success d-none"></div>
+
+        <form id="inquiry-form">
+            <div class="mb-3">
+                <label for="full_name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="full_name" name="full_name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="contact_number" class="form-label">Contact Number</label>
+                <input type="text" class="form-control" id="contact_number" name="contact_number">
+            </div>
+            <div class="mb-3">
+                <label for="service_type" class="form-label">Service Type</label>
+                <input type="text" class="form-control" id="service_type" name="service_type">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <!-- service  -->
+    <div class="container my-5 ">
+        <h1 class="section-title">Our Services</h1>
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card service-card h-100">
+                    <div class="card-body text-center">
+                        <div class="border">
+                            <img src="{{ asset('asset/images/Construction.webp') }}" class="card-img-top img-fluid" alt="Construction Service">
+
+                        </div>
+                        <h2 class="card-title">Construction</h2>
+                        <p class="card-text">We provide construction services for any type of swimming pool as per clients' requirements and needs.</p>
+                        <a href="" class="btn btn-primary btn-enquire">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card service-card h-100">
+                    <div class="card-body text-center">
+                        <div class="border">
+                            <img src="{{ asset('asset/images/Renovation.webp') }}" class="card-img-top img-fluid" alt="Renovation Service">
+
+                        </div>
+                        <h2 class="card-title">Renovation</h2>
+                        <p class="card-text">We provide customized services to renovate your swimming pool and give it an enhanced look and functionality.</p>
+                        <a href="" class="btn btn-primary btn-enquire">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card service-card h-100">
+                    <div class="card-body text-center">
+                        <div class="border">
+                            <img src="{{ asset('asset/images/Maintenance.webp') }}" class="card-img-top img-fluid" alt="Maintenance Service">
+
+                        </div>
+                        <h2 class="card-title">Maintenance</h2>
+                        <p class="card-text">We provide annual maintenance services to take care of your swimming pool at very affordable prices.</p>
+                        <a href="" class="btn btn-primary btn-enquire">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card service-card h-100">
+                    <div class="card-body text-center">
+                        <div class="border">
+                            <img src="{{ asset('asset/images/Cleaning.jpg') }}" class="card-img-top img-fluid" alt="Cleaning Service">
+
+                        </div>
+                        <h2 class="card-title">Cleaning</h2>
+                        <p class="card-text">We also provide swimming pool cleaning services, and we have a dedicated team of experts to help you.</p>
+                        <a href="" class="btn btn-primary btn-enquire">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="mb-3">
-            <label for="contact_number" class="form-label">Contact Number</label>
-            <input type="text" class="form-control" id="contact_number" name="contact_number">
+    </div>
+
+    <!-- mission section -->
+     
+    <!-- end mission mission section -->
+</div>
+<div class="container mission-section">
+    <!-- Left Side Image -->
+    <div class="col-md-6 image-container">
+        <img src="{{asset('asset/images/Construction.webp')}}" alt="Mission Image">
+    </div>
+
+    <!-- Right Side Content -->
+    <div class="col-md-6 content-container">
+        <h2>MISSION</h2>
+        
+        <div class="content-box">
+            <div class="number">01</div>
+            <div>
+                <h4>Commitment to Excellence</h4>
+                <p>Mount Everest is dedicated to elevating Doha's pool service experience by delivering top-notch solutions...</p>
+            </div>
         </div>
-        <div class="mb-3">
-            <label for="service_type" class="form-label">Service Type</label>
-            <input type="text" class="form-control" id="service_type" name="service_type">
+        
+        <div class="content-box">
+            <div class="number">02</div>
+            <div>
+                <h4>Efficiency in Operations</h4>
+                <p>We prioritize efficiency in all our operations, streamlining processes to provide prompt and effective pool services...</p>
+            </div>
         </div>
-        <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" name="message"></textarea>
+        
+        <div class="content-box">
+            <div class="number">03</div>
+            <div>
+                <h4>Client Satisfaction as a Priority</h4>
+                <p>At Mount Everest, client satisfaction is our primary goal. We understand the unique needs of our clients in Doha...</p>
+            </div>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+        
+        <div class="content-box">
+            <div class="number">04</div>
+            <div>
+                <h4>Setting Industry Standards</h4>
+                <p>Our mission extends beyond providing excellent pool services; we aspire to set new industry standards...</p>
+            </div>
+        </div>
+    </div>
 </div>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const statItems = document.querySelectorAll(".stat-item");
 
-</div>
+    function animateCount(element, start, end, duration) {
+        let current = start;
+        const increment = (end - start) / (duration / 10);
+        const interval = setInterval(() => {
+            current += increment;
+            if (current >= end) {
+                element.textContent = end.toLocaleString(); // Format as a number
+                clearInterval(interval);
+            } else {
+                element.textContent = Math.floor(current).toLocaleString();
+            }
+        }, 10);
+    }
+
+    function handleScroll() {
+        statItems.forEach((item) => {
+            const statNumber = item.querySelector(".stat-number");
+            const targetText = statNumber.textContent;
+            const targetNumber = parseInt(targetText.replace(/K|\+/g, "") + "000"); // Convert "K+" suffix to actual number
+
+            // Check if the stat item is in view and hasn't been counted yet
+            const rect = item.getBoundingClientRect();
+            if (rect.top < window.innerHeight && !item.classList.contains("visible")) {
+                item.classList.add("visible");
+                animateCount(statNumber, 0, targetNumber, 2000); // 2000ms for animation duration
+            }
+        });
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Initial check in case elements are already in view
+});
+
+
+
+
+    // Scroll Animation for Content Boxes
+    $(window).on('scroll', function() {
+        $('.content-box').each(function() {
+            if ($(this).offset().top < $(window).scrollTop() + $(window).height() - 100) {
+                $(this).addClass('active');
+            }
+        });
+    });
+</script>
 @endsection

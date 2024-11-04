@@ -80,7 +80,133 @@ body {
     color: #0056b3; /* Set to the color of active page */
     
 }
+/* counter section */
+.stats-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+.stat-item {
+    text-align: center;
+    color: #555;
+}
+.stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+}
+.stat-description {
+    color: #888;
+}
+.divider {
+    height: 50px;
+    width: 1px;
+    background-color: #ddd;
+}
+.stat-item.visible {
+    opacity: 1;
+    transform: translateX(0); /* Moves to original position */
+}
+/* end counter section */
 
+/* start service section*/
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 15px 20px;
+    background-color: #036298; 
+    color: #f8f9fa; /* Dark gray text for contrast */
+    
+    /* border-radius: 8px; Rounded corners */
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+
+/* Optional styling for an underline effect */
+.section-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #007bff; /* Blue accent color */
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.image-container {
+    width: 100%; /* Or set a fixed width */
+    height: 200px; /* Define the height of the box */
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* "cover" fills the box while cropping excess, "contain" fits image inside box without cropping */
+    border-radius: 8px; /* Optional: Rounds the corners */
+}
+
+
+/* end service section*/
+/* start mission section */
+.mission-section {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+}
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.content-container {
+    padding-left: 30px;
+}
+.content-container h2 {
+    font-size: 2rem;
+    color: #0033cc;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.content-box {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+.content-box .number {
+    background-color: #00cc99;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+.content-box h4 {
+    color: #003366;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.content-box p {
+    color: #666;
+}
+.content-box {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.content-box.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+/* end mission section */
 
 #heroCarousel{
     /* border: 1px solid red; */

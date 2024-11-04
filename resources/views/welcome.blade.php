@@ -53,6 +53,9 @@
                         <a class="nav-link" href="abouts">About Us</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="abouts">Gallery</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="contacts">Contact Us</a>
                     </li>
                 </ul>

@@ -13,12 +13,12 @@
                     <p><strong>Address:</strong> Doha, Qatar</p>
                     <p><strong>Phone:</strong> <a href="tel:+97430030215">+974 30030215</a></p>
                     <p><strong>WhatsApp:</strong> <a href="https://wa.me/97430030215">+974 30030215</a></p>
-                    <p><strong>Email:</strong> <a href="mailto:info@ablestpools.com">info@ablestpools.com</a></p>
-                    <p><strong>Website:</strong> <a href="https://albestpools.com/" target="_blank">www.ablestpools.com</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:info@ablestpools.com">info@albestpools.com</a></p>
+                    <p><strong>Website:</strong> <a href="https://albestpools.com/" target="_blank">www.albestpools.com</a></p>
 
                     <!-- Social Media Links -->
                     <div class="social-icons mt-4">
-                        <a href="https://www.facebook.com/ablestpools" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61567498243710" target="_blank"><i class="fab fa-facebook"></i></a>
                         <a href="https://twitter.com/ablestpools" target="_blank"><i class="fab fa-twitter"></i></a>
                         <a href="https://www.instagram.com/ablestpools" target="_blank"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/company/ablestpools" target="_blank"><i class="fab fa-linkedin"></i></a>

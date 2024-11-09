@@ -1,5 +1,5 @@
 @extends('welcome')
-@section('title', 'Service')
+@section('title', 'Contact')
 <!-- Top Company Welcome -->
 @section('section')
  <!-- Contact Section -->

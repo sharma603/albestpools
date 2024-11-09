@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+}
+/* Footer styling */
+footer {
+    background-color: #3a403e;
+    padding: 20px;
+    font-size: large;
+
+}
+
+.footer-text {
+    margin: 0;
+}
+
+
+h5 {
+    font-size: 2.2rem;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+footer p, ul li {
+    color: rgb(255, 255, 255);
+    font-size: 1.0rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-icons a {
+    color: #2e91e2;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+footer p {
+    color: #d2cfcf;
+    font-size: 1.rem;
+}
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 0.9rem;
+    }
+}
+/* end footer */

@@ -120,38 +120,54 @@
             </div>
         </div>
     </div>
-    <!-- this is inquery form -->
-
-    <div class="container mt-5">
-        <h2>Inquiry Form</h2>
-
-        <!-- Success message -->
-        <div id="success-message" class="alert alert-success d-none"></div>
-
-        <form id="inquiry-form">
-            <div class="mb-3">
-                <label for="full_name" class="form-label">Full Name</label>
-                <input type="text" class="form-control" id="full_name" name="full_name" required>
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-            </div>
-            <div class="mb-3">
-                <label for="contact_number" class="form-label">Contact Number</label>
-                <input type="text" class="form-control" id="contact_number" name="contact_number">
-            </div>
-            <div class="mb-3">
-                <label for="service_type" class="form-label">Service Type</label>
-                <input type="text" class="form-control" id="service_type" name="service_type">
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" name="message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+    <!-- start this is inquery form -->
+     
+    <div class="container">
+    <div class="form-container">
+        <h2 class="form-header">Inquiry</h2>
+        <form id="inquiryForm" action="{{ route('enqueryform') }}" method="POST" enctype="multipart/form-data">
+        @csrf
+        <div class="mb-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name">
     </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address">
+    </div>
+    <div class="mb-3">
+        <label for="phone" class="form-label">Phone Number</label>
+        <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
+    </div>
+    <div class="mb-3">
+        <label for="service" class="form-label">Select Service</label>
+        <select class="form-control" id="service" name="service">
+            <option value="">Select a Service</option>
+            <option value="Swimming Pool Cleaning">Swimming Pool Cleaning</option>
+            <option value="Swimming Pool Construction">Swimming Pool Construction</option>
+            <option value="Swimming Pool Maintenance">Swimming Pool Maintenance</option>
+            <option value="Swimming Pool Maintenance">Automatic Irrigation System</option>
+            <option value="Swimming Pool Maintenance">Water Feature and Fountains</option>
+            <option value="Swimming Pool Maintenance">Jacuzzi, Spa, and Steam Room</option>
+            <option value="Swimming Pool Maintenance">Landscape Lighting</option>
+            <option value="Swimming Pool Maintenance">Construction and Maintenance</option>
+           
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Write your message"></textarea>
+    </div>
+            <button type="submit" class="btn btn-primary w-100">Submit Inquiry</button>
+        </form>
+        <div class="form-footer">
+            <p>We'll get back to you shortly!</p>
+        </div>
+    </div>
+</div>
+    <!-- end this is inquery form -->
+
+   
     <!-- service  -->
     <div class="container my-5 ">
         <h1 class="section-title">Our Services</h1>
@@ -263,8 +279,19 @@
         </div>
     </div>
 </div>
-
-
+<!-- Vision Section -->
+<section class="vision-section container text-center my-5 p-4 rounded shadow">
+    <div class="row justify-content-center">
+        <div class="col-lg-10 col-md-10 col-sm-12">
+            <h2 class="vision-title">Our Vision</h2>
+            <p class="vision-text">
+                We envision <span class="highlight">Albest Pools Contracting and Service</span> as Doha’s most trusted name in pool contracting.
+                Our commitment to <span class="highlight">reliability</span>, <span class="highlight">innovation</span>, and <span class="highlight">excellence</span> aims to set new industry standards in
+                pool design, construction, and maintenance, delivering exceptional value and satisfaction to our clients.
+            </p>
+        </div>
+    </div>
+<!-- Vision Section -->
 @endsection
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>

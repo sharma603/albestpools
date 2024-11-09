@@ -1,5 +1,5 @@
 @extends('welcome')
-@section('title', 'Service')
+@section('title', 'About US')
 
 @section('section')
 <!-- Hero Section -->

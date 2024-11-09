@@ -17,17 +17,18 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('asset/css/home.css') }}">
+    <link rel="stylesheet" href="{{ asset('asset/css/footer.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 
 <body>
     <!-- Top view company information here -->
-@section('Tophead')
-   
+    @section('Tophead')
+
     @show
 
-   <!-- Navbar -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="z-index: 1000;;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -37,7 +38,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-<!--  -->
+            <!--  -->
             <div class="collapse navbar-collapse bg-light" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item ">
@@ -52,12 +53,15 @@
                     <li class="nav-item">
                         <a class="nav-link" href="abouts">About Us</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="abouts">Gallery</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="contacts">Contact Us</a>
                     </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="inquiry">inquiry</a>
+                    </li> -->
                 </ul>
             </div>
 
@@ -78,51 +82,58 @@
     </div>
     <!-- End Model Box -->
 
-    <footer>
-        <!-- Optional footer content can go here -->
-        <footer class="bg-dark text-white pt-4 pb-3 mt-5">
-    <div class="container">
+
+    <!-- Optional footer content can go here -->
+    <footer class="text-white pt-4 pb-3 mt-5">
         <div class="row">
-            <!-- Company Information -->
-            <div class="col-md-4 text-center text-md-start mb-3">
-                <h5>Albest Pools Contracting and Services</h5>
-                <p>We specialize in high-quality pool installation and maintenance, providing innovative solutions with a commitment to customer satisfaction.</p>
+            <!-- About Section -->
+            <div class="col-md-4">
+                <h5>About Us</h5>
+                <p>Albest Pools Contracting and Service is made up of a group of highly skilled gardening, landscaping professionals who pay close attention to detail. Our experienced staff will keep your property looking and functioning beautifully.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-skype"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
             </div>
 
-            <!-- Quick Links -->
-            <div class="col-md-4 text-center mb-3">
-                <h5>Quick Links</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-white text-decoration-none">Home</a></li>
-                    <li><a href="service" class="text-white text-decoration-none">Services</a></li>
-                    <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
-                    <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+            <!-- Services Section -->
+            <div class="col-md-4">
+                <h5>Our Services</h5>
+                <ul>
+                <li>Swimming Pool Construction</li>
+        <li>Hard and Soft Landscape</li>
+        <li>Automatic Irrigation System</li>
+        <li>Water Feature and Fountains</li>
+        <li>Jacuzzi, Spa, and Steam Room</li>
+        <li>Landscape Lighting</li>
+        <li>Construction and Maintenance</li>
+        <li>Albest Pools Contracting and Service</li>
                 </ul>
             </div>
 
-            <!-- Contact Information -->
-            <div class="col-md-4 text-center text-md-end mb-3">
+            <!-- Contact Section -->
+            <div class="col-md-4">
                 <h5>Contact Us</h5>
-                <p><a href="mailto:albestpools55@gmail.com" class="text-white text-decoration-none">albestpools55@gmail.com</a></p>
-                <p><a href="tel:+974300303215" class="text-white text-decoration-none">+974-300303215</a></p>
-
-                <!-- Social Media Links -->
-                <div class="d-flex justify-content-center justify-content-md-end">
-                    <a href="https://facebook.com" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://instagram.com" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-                    <a href="https://twitter.com" class="text-white"><i class="fab fa-twitter"></i></a>
-                </div>
+                <p> Doha, Qatar</p>
+                <p>Email: info@albestpools.com</p>
+                <p>Phone: +974 30030215</p>
+                <!-- <p>Sat-Thu: 9am - 6pm</p> -->
+                <h5>Working Hours</h5>
+                <p>Saturday - Thursday: 8:30 am - 5:00 pm</p>
+                <p>Friday: Closed</p>
             </div>
         </div>
-        
         <!-- Copyright Row -->
         <div class="row mt-3">
             <div class="col text-center">
                 <p class="mb-0">&copy; 2024 Albest Pools Contracting and Services. All rights reserved.</p>
             </div>
         </div>
-    </div>
-</footer>
+
+
+
     </footer>
 
     <!-- jQuery (Optional, only if you need it) -->

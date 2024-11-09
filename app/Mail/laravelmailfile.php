@@ -7,18 +7,21 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
+use Illuminate\Mail\Mailables\Attachment;
 use Illuminate\Queue\SerializesModels;
 
-class laravelmailfile extends Mailable
+class LaravelMailFile extends Mailable
 {
     use Queueable, SerializesModels;
+
+    public $data;
 
     /**
      * Create a new message instance.
      */
-    public function __construct()
+    public function __construct(array $data)
     {
-        //
+        $this->data = $data;
     }
 
     /**
@@ -27,7 +30,7 @@ class laravelmailfile extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Laravelmailfile',
+            subject: $this->data['service'], // 'service' holds the subject here
         );
     }
 
@@ -37,17 +40,21 @@ class laravelmailfile extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'view.name',
+            view: 'layout.contect',
+            with: [
+                'name' => $this->data['name'],
+                'email' => $this->data['email'],
+                'phone' => $this->data['phone'],
+                'service' => $this->data['service'],
+                'message' => $this->data['message']
+            ]
         );
-    }
+    } // <-- Closing bracket for the content() method
 
     /**
      * Get the attachments for the message.
      *
      * @return array<int, \Illuminate\Mail\Mailables\Attachment>
      */
-    public function attachments(): array
-    {
-        return [];
-    }
+   
 }

@@ -1,5 +1,5 @@
 @extends('welcome')
-@section('title', 'Service')
+@section('title', 'Blogs')
 <!-- Top Company Welcome -->
 @section('section')
 <div class="container">

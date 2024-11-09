@@ -1,0 +1,16 @@
+/* this for contacts page css coding */
+.contact-info {
+    font-size: 18px;
+}
+.btn-custom {
+    background-color: #000000;
+    color: rgb(35, 33, 33);
+    padding: 10px 20px;
+    font-weight: 600;
+}
+.social-icons a {
+    color: #036298;
+    font-size: 24px;
+    margin: 0 10px;
+}
+/* end for contacts page css coding */

@@ -28,7 +28,7 @@ class emailSend extends Controller
         $this->phone = $this->data['phone'];
         $this->message = $this->data['message'];
 
-        \Mail::to('albestpools55@gmail.com')->send(new LaravelMailFile([
+        Mail::to('albestpools55@gmail.com')->send(new LaravelMailFile([
             "name" => $this->name,
             "email" => $this->email,
             "phone" => $this->phone,

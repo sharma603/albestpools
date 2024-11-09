@@ -43,19 +43,19 @@ class Menu extends Controller
         return view('layout.thank');
     }
 
-    public function sendEmail(Request $request)
-    {
-        // Validate incoming data
-        $data = $request->validate([
-            'fullName' => 'required|string|max:255',
-            'email' => 'required|email|max:255',
-            'message' => 'nullable|string|max:20',
-        ]);
+    // public function sendEmail(Request $request)
+    // {
+    //     // Validate incoming data
+    //     $data = $request->validate([
+    //         'fullName' => 'required|string|max:255',
+    //         'email' => 'required|email|max:255',
+    //         'message' => 'nullable|string|max:20',
+    //     ]);
 
-        // Send notification
-        Notification::route('mail', 'albestpools55@gmail.com')->notify(new SendContactForm($data));
+    //     // Send notification
+    //     Notification::route('mail', 'albestpools55@gmail.com')->notify(new SendContactForm($data));
 
-        // Redirect to the thank you page
-        return redirect()->route('layout.thank');
-    }
+    //     // Redirect to the thank you page
+    //     return redirect()->route('layout.thank');
+    // }
 }

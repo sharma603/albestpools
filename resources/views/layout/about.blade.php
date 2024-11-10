@@ -19,12 +19,12 @@
                 <h2>Who We Are</h2>
                 <p>Founded in Doha, Albest Pools Contracting & Service has established itself as a leader in custom pool design and maintenance. Our skilled team is dedicated to transforming outdoor spaces with luxurious pools and water features that are both functional and aesthetically pleasing.</p>
                 <p>From small residential pools to large-scale resort features, we specialize in high-quality craftsmanship and innovative solutions that bring our clients’ visions to life.</p>
-                <a href="#contact" class="btn btn-custom mt-3">Contact Us</a>
+                <a href="contacts" class="btn btn-custom mt-3">Contact Us</a>
             </div>
 
             <!-- Image Section -->
             <div class="col-md-6">
-                <img src="{{ asset('asset/images/pool-service.jpg') }}" alt="Albest Pools Services" class="img-fluid rounded">
+                <img src="{{ asset('asset/images/pool-service.jpeg') }}" alt="Albest Pools Services" class="img-fluid rounded">
             </div>
         </div>
     </div>

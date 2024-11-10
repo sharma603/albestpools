@@ -34,7 +34,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="z-index: 1000;;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="https://albestpools.com/">
                 <img src="{{ asset('asset/company_logo/ablest_logo.png') }}" style="height:50px;" alt="Albest Logo">
                 <img src="{{ asset('asset/company_logo/albest_name.png') }}" style="height:40px; margin-top:10px;" alt="Albest Name">
             </a>

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InquiryController;
 use App\Http\Controllers\EmailTestController;
 use App\Http\Controllers\EmailSend;
-use App\Http\Controllers\menu;
+use App\Http\Controllers\Menu;
 use App\Models\Inquiry;
 
 // Home Route
@@ -24,6 +24,7 @@ Route::get('/service', [menu::class, 'service']);
 Route::get('/abouts', [menu::class, 'abouts']);
 Route::get('/blogs', [menu::class, 'blogs']);
 Route::get('/abouts', [menu::class, 'abouts']);
+Route::get('/Gallery', [menu::class, 'Gallery']);
 Route::get('/contacts', [menu::class, 'contacts']);
 
 // Route::post('/thank', [menu::class, 'thank']);

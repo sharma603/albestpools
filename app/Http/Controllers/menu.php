@@ -38,9 +38,9 @@ class Menu extends Controller
         return view('layout.inquiry');
     }
 
-    public function thank()
+    public function Gallery()
     {
-        return view('layout.thank');
+        return view('layout.Gallery');
     }
 
     // public function sendEmail(Request $request)

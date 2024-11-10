@@ -40,7 +40,7 @@ class LaravelMailFile extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'layout.contect',
+            view: 'layout.Enquery.contect',
             with: [
                 'name' => $this->data['name'],
                 'email' => $this->data['email'],

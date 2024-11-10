@@ -127,6 +127,18 @@
                 <p>Saturday - Thursday: 8:30 am - 5:00 pm</p>
                 <p>Friday: Closed</p>
             </div>
+            <!-- this is login button -->
+
+          <!-- Container to center the button on the page -->
+  <div class="container d-flex justify-content-right align-items-right vh-1">
+    <!-- Button with a link inside -->
+    <div class="btn-custom">
+      <a href="login" class=" d-flex align-items-center justify-content-right">Login</a>
+    </div>
+  </div>
+
+            
+            <!--end this is login button -->
         </div>
         <!-- Copyright Row -->
         <div class="row mt-3">

@@ -26,6 +26,7 @@ Route::get('/blogs', [menu::class, 'blogs']);
 Route::get('/abouts', [menu::class, 'abouts']);
 Route::get('/Gallery', [menu::class, 'Gallery']);
 Route::get('/contacts', [menu::class, 'contacts']);
+Route::get('/login', [menu::class, 'login']);
 
 // Route::post('/thank', [menu::class, 'thank']);
 // Route::view('/about', 'layouts.about')->name('about');

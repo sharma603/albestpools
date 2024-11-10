@@ -1,26 +1,57 @@
+/* Our Work Section Styling */
+.our-work-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.divider {
+    width: 100px;
+    height: 4px;
+    background-color: #007bff;
+    border-radius: 2px;
+    margin-top: 8px;
+}
+
+.section-description {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
 /* Gallery box styling */
 .gallery-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: #e9e9f0;
-    border-radius: 3px;
+    background-color: #fff;
+    border-radius: 8px;
     padding: 15px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
-    height: 300px;
-    width: 400px;
+    height: 400px;
+    width: 350px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-box:hover {
+    transform: translateY(-5px);
 }
 
 /* Container to hold and style the image */
 .gallery-image-container {
     width: 100%;
-    height: 200px; /* Set a consistent height for all images */
+    height: 350px;
     overflow: hidden;
     border-radius: 5px;
 }
 
-/* Image styling to ensure it fits well within the container */
 .gallery-image-container img {
     width: 100%;
     height: 100%;
@@ -30,4 +61,107 @@
 /* Button styling within the box */
 .view-button {
     width: 100%;
+}
+
+/* Responsive Styles */
+/* Responsive Design for Different Screen Sizes */
+
+/* Large desktop screens (1440px and above) */
+@media (min-width: 1440px) {
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .section-description {
+        font-size: 1.25rem;
+    }
+
+    .gallery-box {
+        width: 350px;
+        height: 450px;
+    }
+
+    .gallery-image-container {
+        height: 350px;
+    }
+}
+
+/* Desktop and Tablet screens (1024px to 1439px) */
+@media (max-width: 1439px) and (min-width: 1024px) {
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .section-description {
+        font-size: 1.2rem;
+    }
+
+    .gallery-box {
+        width: 300px;
+        height: 400px;
+    }
+
+    .gallery-image-container {
+        height: 280px;
+    }
+}
+
+/* Tablets (768px to 1023px) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .section-description {
+        font-size: 1.1rem;
+    }
+
+    .gallery-box {
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery-image-container {
+        height: 220px;
+    }
+}
+
+/* Small Tablets and Large Phones (576px to 767px) */
+@media (max-width: 767px) and (min-width: 576px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-description {
+        font-size: 1rem;
+    }
+
+    .gallery-box {
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery-image-container {
+        height: 200px;
+    }
+}
+
+/* Mobile devices (up to 575px) */
+@media (max-width: 575px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .section-description {
+        font-size: 0.95rem;
+    }
+
+    .gallery-box {
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery-image-container {
+        height: 180px;
+    }
 }

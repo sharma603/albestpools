@@ -15,9 +15,17 @@
 @endsection
 
 @section('section')
+
+<!-- Our Work Section -->
 <div class="container mt-5">
+    <div class="our-work-section text-center mb-5">
+        <h2 class="section-title">Our Work</h2>
+        <div class="divider mx-auto"></div>
+        <p class="section-description mt-3">Take a look at some of our top projects. We pride ourselves on quality, creativity, and professionalism, ensuring that every project meets the highest standards.</p>
+    </div>
+
+    <!-- Gallery Section -->
     <div class="row g-4">
-        <!-- Gallery Images with "View" buttons and data attributes for details -->
         @foreach (range(1, 8) as $i)
         <div class="col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
             <div class="gallery-box shadow-sm rounded">

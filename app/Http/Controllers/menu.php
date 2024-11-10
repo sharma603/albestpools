@@ -43,6 +43,11 @@ class Menu extends Controller
         return view('layout.Gallery');
     }
 
+    public function login(){
+        return  view('layout.Admin.login');
+    }
+
+
     // public function sendEmail(Request $request)
     // {
     //     // Validate incoming data

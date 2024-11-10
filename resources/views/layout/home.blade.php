@@ -98,7 +98,7 @@
             <div class="stats-container">
                 <!-- Stat Item 1 -->
                 <div class="stat-item">
-                    <div class="stat-number">14K+</div>
+                    <div class="stat-number">1K+</div>
                     <div class="stat-description">Happy Customers</div>
                 </div>
 
@@ -106,7 +106,7 @@
 
                 <!-- Stat Item 2 -->
                 <div class="stat-item">
-                    <div class="stat-number">27K+</div>
+                    <div class="stat-number">17K+</div>
                     <div class="stat-description">Product Sold</div>
                 </div>
 
@@ -114,7 +114,7 @@
 
                 <!-- Stat Item 3 -->
                 <div class="stat-item">
-                    <div class="stat-number">15+</div>
+                    <div class="stat-number">2+</div>
                     <div class="stat-description">Years Experience</div>
                 </div>
             </div>
@@ -315,7 +315,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function handleScroll() {
         statItems.forEach((item, index) => {
             const statNumber = item.querySelector(".stat-number");
-            const targetNumber = parseInt(statNumber.textContent.replace(/K|\+/g, "") + "000"); // Handle "K+" suffix
+            //const targetNumber = parseInt(statNumber.textContent.replace(/K|\+/g, "") + "K"); // Handle "K+" suffix
             const rect = item.getBoundingClientRect();
             if (rect.top < window.innerHeight && !item.classList.contains("visible")) {
                 item.classList.add("visible");

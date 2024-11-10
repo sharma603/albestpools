@@ -125,7 +125,7 @@
     <div class="container">
     <div class="form-container">
         <h2 class="form-header">Inquiry</h2>
-        <form id="inquiryForm" action="{{ route('enqueryform') }}" method="POST" enctype="multipart/form-data">
+        <form id="inquiryForm" action="{{ route('enqueryform') }}" method="POST">
         @csrf
         <div class="mb-3">
         <label for="name" class="form-label">Full Name</label>

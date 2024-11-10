@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Mail\LaravelMailFile; 
 use Illuminate\Support\Facades\Mail;
 
-class emailSend extends Controller
+class EmailSend extends Controller
 {
     public $data;
     public $name;

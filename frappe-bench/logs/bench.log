@@ -1,0 +1,30 @@
+2025-10-22 13:51:28,639 DEBUG cd frappe-bench && python3 -m venv env
+2025-10-22 13:51:30,218 DEBUG cd frappe-bench && /workspace/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-10-22 13:51:31,127 DEBUG cd frappe-bench && /workspace/frappe-bench/env/bin/python -m pip install --quiet wheel
+2025-10-22 13:51:31,827 LOG Getting frappe
+2025-10-22 13:51:31,827 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2025-10-22 13:51:35,599 LOG Installing frappe
+2025-10-22 13:51:35,600 DEBUG cd /workspace/frappe-bench && /workspace/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /workspace/frappe-bench/apps/frappe 
+2025-10-22 13:51:53,528 DEBUG cd /workspace/frappe-bench/apps/frappe && yarn install --check-files
+2025-10-22 13:51:55,931 DEBUG cd frappe-bench && bench build
+2025-10-22 13:51:56,015 INFO /home/ubuntu/.local/bin/bench build
+2025-10-22 13:52:05,314 LOG setting up backups
+2025-10-22 13:52:05,325 LOG backups were set up
+2025-10-22 13:52:05,326 INFO Bench frappe-bench initialized
+2025-10-22 13:52:25,178 INFO /home/ubuntu/.local/bin/bench get-app erpnext
+2025-10-22 13:52:25,436 LOG Getting erpnext
+2025-10-22 13:52:25,436 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git  --depth 1 --origin upstream
+2025-10-22 13:52:28,171 LOG Installing erpnext
+2025-10-22 13:52:28,171 DEBUG cd /workspace/frappe-bench && /workspace/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /workspace/frappe-bench/apps/erpnext 
+2025-10-22 13:52:42,478 DEBUG cd /workspace/frappe-bench/apps/erpnext && yarn install --check-files
+2025-10-22 13:52:42,934 DEBUG bench build --app erpnext
+2025-10-22 13:52:43,020 INFO /home/ubuntu/.local/bin/bench build --app erpnext
+2025-10-22 13:52:53,255 INFO /home/ubuntu/.local/bin/bench get-app https://github.com/defendicon/POS-Awesome-V15.git
+2025-10-22 13:52:53,262 LOG Getting POS-Awesome-V15
+2025-10-22 13:52:53,262 DEBUG cd ./apps && git clone https://github.com/defendicon/POS-Awesome-V15.git  --depth 1 --origin upstream
+2025-10-22 13:52:54,608 LOG Installing posawesome
+2025-10-22 13:52:54,608 DEBUG cd /workspace/frappe-bench && /workspace/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /workspace/frappe-bench/apps/posawesome 
+2025-10-22 13:52:55,724 DEBUG cd /workspace/frappe-bench/apps/posawesome && yarn install --check-files
+2025-10-22 13:53:05,553 DEBUG bench build --app posawesome
+2025-10-22 13:53:05,644 INFO /home/ubuntu/.local/bin/bench build --app posawesome
+2025-10-22 13:53:24,680 INFO /home/ubuntu/.local/bin/bench new-site posawesome.local --admin-password admin --mariadb-root-password admin
